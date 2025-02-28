@@ -11,8 +11,8 @@ public class questionsPage {
         // Create and configure the panel
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
-        panel.setLayout(null);
         panel.setBackground(Color.YELLOW);
+        panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
 
         // Question 1
 
