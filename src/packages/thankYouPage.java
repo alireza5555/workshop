@@ -9,8 +9,7 @@ public class thankYouPage {
 
         Font font = new Font("Arial", Font.PLAIN, 12);
         // Create and configure the panel
-        JPanel panel = new JPanel();
-        panel.setLayout(null);
+        JPanel panel = new JPanel(new BorderLayout());
         panel.setBounds(0, 0, 600, 600);
         panel.setBackground(Color.YELLOW);
 
@@ -22,7 +21,7 @@ public class thankYouPage {
         thankYouLabel.setBounds(10, 10, 200, 20);
 
         // Add components to the panel
-        panel.add(thankYouLabel);
+        panel.add(thankYouLabel , BorderLayout.CENTER);
 
         // Add panel to the frame
         frame.add(panel);
