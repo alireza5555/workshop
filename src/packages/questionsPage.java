@@ -1,10 +1,14 @@
 package packages;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class questionsPage {
 
     public void create(JFrame frame) {
+
+        Font font = new Font("Arial");
+
         // Create and configure the panel
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
