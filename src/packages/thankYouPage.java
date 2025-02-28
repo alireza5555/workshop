@@ -7,12 +7,12 @@ public class thankYouPage {
 
     public void create(JFrame frame) {
 
-        Font font = new Font("Arial");
-
+        Font font = new Font("Arial", Font.PLAIN, 12);
         // Create and configure the panel
         JPanel panel = new JPanel();
         panel.setLayout(null);
         panel.setBounds(0, 0, 600, 600);
+        panel.setBackground(Color.YELLOW);
 
         // Create thank you label
 

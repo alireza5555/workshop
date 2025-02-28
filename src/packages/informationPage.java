@@ -7,12 +7,12 @@ public class informationPage {
 
     public void create(JFrame frame) {
 
-        Font font = new Font("Arial");
-
+        Font font = new Font("Arial", Font.PLAIN, 12);
         // Create the main panel
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
         panel.setLayout(null);
+        panel.setBackground(Color.YELLOW);
 
         // Name Label and Text Field
 

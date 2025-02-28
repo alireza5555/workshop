@@ -3,11 +3,12 @@ import packages.informationPage;
 
 import java.awt.*;
 
+
 public class Main {
 
     public static void main(String[] args) {
 
-        Font font = new Font("Arial");
+        Font font = new Font("Arial", Font.PLAIN, 12);
 
         // Create and configure the main frame
         JFrame frame = new JFrame("Survey form");
@@ -21,6 +22,8 @@ public class Main {
         JPanel panel = new JPanel();
         panel.setLayout(null);
         panel.setBounds(0, 0, 600, 600);
+        panel.setBackground(Color.YELLOW);
+
 
         // Create title label
         JLabel title = new JLabel("Survey form");
