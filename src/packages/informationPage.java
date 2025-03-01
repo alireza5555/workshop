@@ -12,53 +12,61 @@ public class informationPage {
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
         panel.setBackground(Color.YELLOW);
+        panel.add(Box.createRigidArea(new Dimension(10, 20)));
         panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
+
 
         // Name Label and Text Field
 
         JLabel nameLabel = new JLabel("Name");
-      nameLabel.setFont(font);
+        nameLabel.setFont(font);
+        nameLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        nameLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
-        nameLabel.setBounds(10, 10, 100, 20);
         JTextField nameField = new JTextField(15);
-        nameField.setBounds(50, 10, 100, 20);
-
+        nameField.setAlignmentX(Component.CENTER_ALIGNMENT);
         // Age Label and Text Field
 
         JLabel ageLabel = new JLabel("Age");
         ageLabel.setFont(font);
+        ageLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        ageLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
-        ageLabel.setBounds(10, 50, 100, 20);
         JTextField ageField = new JTextField(15);
-        ageField.setBounds(50, 50, 100, 20);
+        ageField.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Email Label and Text Field
 
         JLabel emailLabel = new JLabel("E_mail");
         emailLabel.setFont(font);
+        emailLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        emailLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
-        emailLabel.setBounds(10, 90, 100, 20);
         JTextField emailField = new JTextField(15);
-        emailField.setBounds(50, 90, 100, 20);
+        emailField.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Software Familiarity Level
 
         JLabel levelLabel = new JLabel("Level of familiarity with similar software");
         levelLabel.setFont(font);
-        levelLabel.setBounds(10, 130, 250, 20);
+        levelLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        levelLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
         JRadioButton level1 = new JRadioButton("beginner");
         level1.setFont(font);
-        level1.setBounds(10, 160, 100, 20);
+        level1.setAlignmentX(Component.CENTER_ALIGNMENT);
+
         JRadioButton level2 = new JRadioButton("Intermediate");
         level2.setFont(font);
-        level2.setBounds(100, 160, 100, 20);
+        level2.setAlignmentX(Component.CENTER_ALIGNMENT);
+
         JRadioButton level3 = new JRadioButton("Advanced");
         level3.setFont(font);
-        level3.setBounds(190, 160, 100, 20);
+        level3.setAlignmentX(Component.CENTER_ALIGNMENT);
+
         JRadioButton level4 = new JRadioButton("Without acquaintance");
         level4.setFont(font);
-        level4.setBounds(280, 160, 150, 20);
+        level4.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Group the radio buttons
         ButtonGroup group = new ButtonGroup();
@@ -70,9 +78,9 @@ public class informationPage {
         // Next Page Button
 
         JButton nextButton = new JButton("Next page");
+        nextButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         nextButton.setFont(font);
 
-        nextButton.setBounds(10, 200, 100, 20);
         nextButton.addActionListener(e -> {
             // Remove current panel and move to Page2
             frame.remove(panel);

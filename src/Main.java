@@ -25,7 +25,8 @@ public class Main {
         // Create title label
         JLabel title = new JLabel("Survey form");
         title.setFont(font);
-        panel.add(title , BorderLayout.NORTH);
+        title.setHorizontalAlignment(JLabel.CENTER);
+        panel.add(title, BorderLayout.NORTH);
 
         // Create start button
         JButton startButton = new JButton("Start!");
