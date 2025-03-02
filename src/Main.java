@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Font font = new Font("Arial");
+        Font font = new Font("Arial", Font.PLAIN, 12);
 
         // Create and configure the main frame
         JFrame frame = new JFrame("Survey form");
@@ -15,29 +15,26 @@ public class Main {
         frame.setSize(600, 600);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLayout(null);
+        frame.setLayout(new BorderLayout());
 
         // Create and configure the main panel
-        JPanel panel = new JPanel();
-        panel.setLayout(null);
+        JPanel panel = new JPanel(new BorderLayout());
         panel.setBounds(0, 0, 600, 600);
+        panel.setBackground(Color.YELLOW);
 
         // Create title label
         JLabel title = new JLabel("Survey form");
         title.setFont(font);
-        title.setBounds(10, 10, 100, 20);
+        title.setHorizontalAlignment(JLabel.CENTER);
+        panel.add(title, BorderLayout.NORTH);
 
         // Create start button
         JButton startButton = new JButton("Start!");
         startButton.setFont(font);
-        startButton.setBounds(10, 40, 100, 20);
+        startButton.setHorizontalAlignment(JButton.CENTER);
+        panel.add(startButton, BorderLayout.CENTER);
 
-        // Add components to the panel
-        panel.add(title);
-        panel.add(startButton);
-
-        // Add panel to the frame
-        frame.add(panel);
+        frame.add(panel, BorderLayout.CENTER);
 
         // Add action listener to the start button
         startButton.addActionListener(e -> {
